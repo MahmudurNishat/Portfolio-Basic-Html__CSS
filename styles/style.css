@@ -1,0 +1,471 @@
+/* =====================================================================================================
+                            Common css start here 
+======================================================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+li {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --primary_color: #757575;
+  --button__color: #fd6e0a;
+  --secondary_color: #181818;
+}
+.container {
+  width: 1300px;
+  margin: auto;
+}
+.containers {
+  width: 1200px;
+  margin: auto;
+}
+.primaryButtons {
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--button__color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid var(--button__color);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.primaryButtons:hover {
+  color: #fd6e0a;
+  background-color: #fff;
+  border: 1px solid var(--button__color);
+}
+
+.sectionTitle {
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* =====================================================================================================
+                            Common css end here 
+======================================================================================================== */
+
+/* =====================================================================================================
+                    nav part css start here 
+======================================================================================================== */
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.list {
+  margin-right: 70px;
+}
+.logo {
+  color: #181818;
+  font-size: 45px;
+  font-weight: 800;
+  cursor: progress;
+}
+.span_one {
+  color: #fd6e0a;
+  font-size: 45px;
+  font-weight: 800;
+}
+.anchor {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  cursor: pointer;
+}
+.anchor:hover {
+  color: var(--button__color);
+}
+.primary-btn {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+  padding: 18px 35px;
+  background-color: #fd6e0a;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #fd6e0a;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  color: var(--button__color);
+  background: transparent;
+  border: 1px solid #fd6e0a;
+}
+
+/* =====================================================================================================
+                                          nav part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          banner part css end here 
+======================================================================================================== */
+#bannerPart {
+  background: url("../images/header_bg.png"), url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: right bottom, left top;
+  background-size: 47%, 4%;
+}
+.banner {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 10px;
+}
+
+.banner__subtitle {
+  color: #474747;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.banner__title {
+  color: #181818;
+  font-size: 85px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.banner__description {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+  padding-right: 157px;
+}
+.outlineBtn {
+  background-color: transparent;
+  border: 1px solid var(--button__color);
+  color: #fd6e0a;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 10px;
+}
+.outlineBtn:hover {
+  color: #fff;
+  background-color: #fd6e0a;
+  border: 1px solid #fd6e0a;
+}
+
+/* =====================================================================================================
+                                          banner part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          About part css start here 
+======================================================================================================== */
+#aboutPart {
+  margin: 40px 0;
+  background-color: #fff;
+}
+
+.wrapperMain {
+  padding: 100px 100px;
+  border-radius: 10px;
+  background: #fff8f3;
+  text-align: center;
+}
+
+.about__description {
+  color: #8d4e4e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin: 20px 0 45px;
+  padding: 0 78px;
+}
+.box {
+  display: flex;
+  column-gap: 50px;
+  justify-content: space-around;
+}
+.item__title {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.item__info {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+/* =====================================================================================================
+                                          About part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
+#whatIDo {
+  margin: 40px 0 100px;
+  background: #fff;
+}
+.MainTop {
+  text-align: center;
+}
+.BoxMain {
+  display: flex;
+  justify-content: space-around;
+}
+.Top__Description {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0 192px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.BoxA {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.BoxTitle {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+}
+.BoxSummary {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 201px;
+}
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          Resume part css end here 
+======================================================================================================== */
+#resume {
+  padding: 0 40px;
+  background-color: #fff;
+}
+.resumeMainColumn {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 24px;
+}
+.education {
+  color: #474747;
+  font-size: 30px;
+  font-weight: 700;
+}
+.educationTitle {
+  color: #474747;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 30px 0px 10px;
+}
+.educationInstitute {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+}
+.educationDescription {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-right: 165px;
+}
+hr {
+  margin-bottom: 30px;
+}
+.downloads {
+  text-align: center !important;
+  margin-left: 39%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+/* =====================================================================================================
+                                          Resume part css end here 
+======================================================================================================== */
+footer {
+  background: #fff8f3;
+  padding: 90px 0 90px;
+}
+.WrapperFooter {
+  display: flex;
+  column-gap: 217px;
+  align-items: flex-start;
+}
+.footerLeft {
+  margin-left: 30px;
+}
+.FooterLeft__title {
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+}
+.FooterLeft__summary {
+  color: #474747;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 562px;
+}
+.icone {
+  margin-right: 24px;
+}
+input,
+textarea:focus {
+  border: 1px solid #181818 !important;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  border: 0;
+  margin-bottom: 24px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+input,
+textarea {
+  padding: 18px 20px;
+}
+
+.InputText {
+  margin-top: 28px;
+}
+input[type="submit"] {
+  padding: 15px 40px;
+  background-color: #fd6e0a;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid #fd6e0a;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #fd6e0a;
+  border: 1px solid #fd6e0a;
+}
+
+/* =====================================================================================================
+                                          Footer part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          Footer part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
+/* =====================================================================================================
+                                          WhatIdo part css end here 
+======================================================================================================== */
